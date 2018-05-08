@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+mkdir -p 3rdparty
+cd 3rdparty
+git clone https://github.com/exrhizo/tf-pose-estimation.git

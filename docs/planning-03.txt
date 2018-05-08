@@ -1,0 +1,63 @@
+Ok, I'm going to follow the face-tutorial from Google
+https://cloud.google.com/vision/docs/face-tutorial
+
+The end state is to have a web interface where you can upload a video and have it deconstructed into gifs
+
+
+Expression self similarity in videos
+Facial expression summarization
+
+
+
+Comparison of the container formats
+https://medium.com/google-cloud/containers-four-ways-457f4b7dd898
+
+Seems like best is App Engine Flex
+It has features that make it easy to deploy and I can still work with a dockerfile
+
+Requirements
+Access from Colab - Google Cloud Storage
+Web front end
+Some way to process videos to create raw feature vectors and gifs
+ - ffmpeg in Docker
+ - Google api or affectiva
+
+
+
+-----
+tutorial with docker and Dlib
+https://hackernoon.com/building-a-facial-recognition-pipeline-with-deep-learning-in-tensorflow-66e7645015b8
+
+
+
+----------
+
+Google Cloud Images: https://cloud.google.com/compute/docs/images#custom_images
+With GPUs! https://cloud.google.com/compute/docs/gpus/add-gpus#install-gpu-driver
+
+
+Actually lets use docker
+
+What libs do I want in the end?
+
+Affectiva
+https://knowledge.affectiva.com/docs/getting-started-with-the-affectiva-sdk-for-linux
+Ubuntu - sudo apt-get install libcurl4-openssl-dev uuid-dev
+CentOS - sudo yum install libcurl-devel.x86_64 libuuid-devel.x86_64
+and includes ffmpeg internally
+
+
+
+OpenPose
+in TensorFlow - https://arvrjourney.com/human-pose-estimation-using-openpose-with-tensorflow-part-1-7dd4ca5c8027
+^^ this is cool because I could use the raw NN outputs
+Nice because hands
+
+
+How to use video with tensorflow:
+https://stackoverflow.com/a/42987845
+
+-----------------
+
+
+Tensor Flow docker image and use OpenPose

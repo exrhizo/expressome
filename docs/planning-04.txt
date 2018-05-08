@@ -1,0 +1,35 @@
+Ok, what is needed infrastructure wise
+
+database
+
+folder structure of videos
+
+Read database easily into the runner
+
+Ingestion
+takes videos and creates tensor series
+ - Affectiva features
+ - openpose tensor
+
+Given these blobs
+
+
+
+parts
+Database - 3hrs
+Ingestor Openpose - 3hrs
+Ingestor Affectiva - 5hrs
+Docker image - 4hrs
+Google Cloud intergration - 4hrs
+
+Ingest my Joe session (maybe a couple other examples)
+
+Try a dimension reduction to create embedding space ???
+using Collab
+
+
+
+
+How long to edit video of me and Jeff - 4hrs each
+
+

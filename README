@@ -1,0 +1,56 @@
+Run commands:
+
+cd /Volumes/encrytiod/Large/y18-expressome-docker
+cd ../host/expressome/
+python3 express.py openpose alex_spirit_journey
+
+
+I can reverse the command to get a folder in my docker to be mounted in host
+https://www.digitalocean.com/community/tutorials/how-to-share-data-between-the-docker-container-and-the-host
+
+
+
+What am I doing
+
+need to instrumentalize tf-pose somehow
+ - create an way to get the heat map
+ - do something to make it accessible
+ - 
+
+
+ I can fork the tf-pose how to put on the python path
+
+
+ how am I going to have this work with docker
+
+
+
+
+
+
+??? old openpose
+Output
+[1, 46, 82, 44]
+
+1/8th of the original (656, 368)
+44 channels
+
+{"size":368},{"size":656},{"size":3}
+
+
+
+LOGGING???
+gcloud + docker : https://cloud.google.com/community/tutorials/docker-gcplogs-driver
+
+https://cloud.google.com/logging/docs/agent/configuration
+
+The Stackdriver Logging agent google-fluentd is a modified version of the fluentd log data collector. 
+
+I want to use fluentd for gcloud and docker
+https://docs.fluentd.org/v0.12/articles/python
+
+Finally::: https://stackoverflow.com/a/13470067/3304125
+
+
+How I am to work with my codes
+it seems that either I go all the way and make it a package, or I just let it live on as scripts

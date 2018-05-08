@@ -1,0 +1,110 @@
+
+Strategy will be to use small projects to learn key concepts
+
+Talk to friends about ML, 
+If I can't talk about it, I need to study it more!
+
+AI companies map
+https://twitter.com/peterxing/status/803719088061251589
+
+** What do I most not know **
+
+ - Q3- How is KNN different from k-means clustering?
+ - Q4- Explain how a ROC curve works.
+ - Q5- Define precision and recall.
+ - Q6- What is Bayes’ Theorem? What for ML?
+ - Q7- Why is “Naive” Bayes naive?
+ - Q8- Explain the difference between L1 and L2 regularization.
+ - Q10- What’s the difference between Type I and Type II error?
+ - Q12- What’s the difference between probability and likelihood?
+ - Q15- What cross-validation technique would you use on a time series dataset?
+ - Q16- How is a decision tree pruned?
+ - Q17- Which is more important to you– model accuracy, or model performance?
+ - Q18- What’s the F1 score? How would you use it?
+ - Q19- How would you handle an imbalanced dataset?
+ - Q20- When should you use classification over regression?
+ - Q21- Name an example where ensemble techniques might be useful.
+ - Q22- How do you ensure you’re not overfitting with a model?
+ - Q23- What evaluation approaches would you work to gauge the effectiveness of a machine learning model?
+ - Q24- How would you evaluate a logistic regression model?
+ - Q25- What’s the “kernel trick” and how is it useful?
+ - Q26- How do you handle missing or corrupted data in a dataset?
+ - Q27- Do you have experience with Spark or big data tools for machine learning?
+
+Q# Interview Questions
+https://www.springboard.com/blog/machine-learning-interview-questions/
+
+Quora on statistics for ML
+https://www.quora.com/How-do-I-learn-statistics-and-probability-for-machine-learning-2
+
+Maybe use this:
+Hinton on NN
+https://www.coursera.org/learn/neural-networks?siteID=SAyYsTvLiGQ-snY6L0_GNqSSe6rMAKmXVg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=SAyYsTvLiGQ
+
+Ng on ML
+https://www.coursera.org/learn/machine-learning?siteID=SAyYsTvLiGQ-WlLhWyMueJWmpuHmv1c7yQ&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=SAyYsTvLiGQ
+
+
+Andrew Leach's List
+- linux
+- Web
+- Databases
+- Customer facing
+- Deep NN
+- Math and training of
+- Pitfalls
+- CNN
+- RNN
+- (Reinforcement Learning)
+- How to go from data to model
+- How to troubleshoot
+- Classic methods of supervised and unsupervised learning
+
+
+
+How to get ML job - according to Andrew Leach
+You should have confidence in basic linux, web tech, databases and customer facing, as well as the ability to develop algorithms and translate them quickly to code. Sounds like you'd be pretty solid on those
+ML is the big filter though, really need to have a strong understanding, and helps to have code on Github to demo (not necessary though)
+Definitely should understand deep neural networks, the mathematics behind them and their training, as well as their pitfalls. Solid understanding of convolutional neural networks, recurrent neural networks, 
+(reinforcement learning is a plus).
+Need to understand how to bridge the gap between data and model development
+emphasis on troubleshooting for the above topics
+and should know the classic methods for supervised and unsupervised learning
+
+
+Refs:
+Deep Reinforcement woes: https://www.alexirpan.com/2018/02/14/rl-hard.html
+
+Data interpretation
+Making sense of a heat map: http://nicolas.kruchten.com/content/2018/02/seriation/
+
+Videos on ML
+https://t.co/NwQeIO6qT8
+
+Practical Advice:
+https://hackernoon.com/doing-machine-learning-efficiently-8ba9d9bc679d
+https://hackernoon.com/8-deep-learning-best-practices-i-learned-about-in-2017-700f32409512
+
+Ux of Ai
+https://design.google/library/ux-ai/
+
+Creative NN
+https://nips2017creativity.github.io/
+
+
+How to work with time series
+https://machinelearningmastery.com/prepare-univariate-time-series-data-long-short-term-memory-networks/
+
+
+Wes Anderson Visual Simularity
+http://clome.info/work/machine-visions/
+
+Word Embeddings are Wierd
+http://www.cs.cornell.edu/~laurejt/papers/sgns-geometry-2017.pdf
+
+Kaggle past solutions
+http://ndres.me/kaggle-past-solutions/
+
+Neural Net Zoo
+http://www.asimovinstitute.org/neural-network-zoo/
+
