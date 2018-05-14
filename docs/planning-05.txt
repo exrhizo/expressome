@@ -31,7 +31,11 @@ TODO
  - create test video
 
  - ingest videos
+   - describe them
+   - upload them into buckets
  - get expressome onto gcloud
+   - create Dockerfile
+   - mount the bucket for read and write
 
 
  - USE colab
