@@ -19,7 +19,8 @@ RUN apt-get install libopencv-dev python-opencv python-pip -y
 
 # Additional for cmake build
 # from install_cmake.sh
-RUN apt-get install build-essential
+# cmake
+RUN apt-get --assume-yes install build-essential cmake git
 # General dependencies
 RUN apt-get --assume-yes install libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler
 RUN apt-get --assume-yes install --no-install-recommends libboost-all-dev
@@ -27,18 +28,14 @@ RUN apt-get --assume-yes install --no-install-recommends libboost-all-dev
 RUN apt-get --assume-yes install libgflags-dev libgoogle-glog-dev liblmdb-dev
 # Python libs
 RUN pip install --upgrade numpy protobuf
-# cmake
-RUN apt-get install cmake
 
-RUN wget https://github.com/CMU-Perceptual-Computing-Lab/openpose/archive/master.zip; \
-    unzip master.zip; rm master.zip
+RUN git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose.git
 
-RUN mkdir /openpose-master/build
-
-WORKDIR openpose-master/build
-
+RUN mkdir /openpose/build
+WORKDIR /openpose/build
 RUN cmake -DGPU_MODE=CPU_ONLY ..
-RUN make -j$(grep processor /proc/cpuinfo | wc -l) install
+RUN make -j$(grep processor /proc/cpuinfo | wc -l)
+RUN make install
 
 WORKDIR /
 RUN git clone https://github.com/exrhizo/expressome.git
