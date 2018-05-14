@@ -3,6 +3,9 @@ PLAN  PLAN
 PLAN  PLAN
 
 
+Could downsample to half the framerate, the nyquest freq says that need to sample at twice the freq as the signal. It is fast to move at even 4hz.
+
+
 DOCKERFILE (start with CPU version)
 
 CPU vs NVIDIA versions
@@ -22,6 +25,22 @@ Run everything for all my vids
 
 
 
+TODO
+ 
+ - Get express to work with the openpose
+ - create test video
+
+ - ingest videos
+ - get expressome onto gcloud
+
+
+ - USE colab
+ - Tensorboard - https://stackoverflow.com/questions/47818822/can-i-use-tensorboard-with-google-colab
+
+ - create a script that uses Gifify, something that can work with the output of 
+ - Gifify - https://askubuntu.com/questions/648603/how-to-create-an-animated-gif-from-mp4-video-via-command-line
+
+
 
 RESOURCES    RESOURCES    RESOURCES
 RESOURCES    RESOURCES    RESOURCES
@@ -38,16 +57,30 @@ troubleshooting my docker on gcloud
 DOCKER with the x11 gui
 https://forums.docker.com/t/how-to-run-gui-apps-in-containiers-in-osx-docker-for-mac/17797/7
 
+video on setup
+https://www.youtube.com/watch?v=abEf3wQJBmE
 
 
+MOUNT A BUCKET ONTO THE FILESYSTEM
+https://cloud.google.com/storage/docs/gcs-fuse
+
+
+
+
+ACTUALLY can't use app engine flex
+GPUs are not enabled according to stackoverflow
+Here is how they are set up
+https://graysonkoonce.com/deploying-to-google-app-engine-using-docker/
 
 THE WAY TO DO THE DOCKER STUFF
 "CUDA enabled docker container"
 https://medium.com/google-cloud/containerized-jupyter-notebooks-on-gpu-on-google-cloud-8e86ef7f31e9
 
-video on setup
-https://www.youtube.com/watch?v=abEf3wQJBmE
+This is the way to do it.
+I will have a docker container and the script to set up all the gcloud stuff
+then run the script, install the container and then ssh into it and run the test video processing
 
+first get the local version to process a short video
 
 
 
