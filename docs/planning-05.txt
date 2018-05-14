@@ -1,0 +1,24 @@
+
+
+GPU on google cloud with normal ubuntu
+https://hackernoon.com/launch-a-gpu-backed-google-compute-engine-instance-and-setup-tensorflow-keras-and-jupyter-902369ed5272
+
+
+troubleshooting my docker on gcloud
+
+
+
+
+
+THE WAY TO DO THE DOCKER STUFF
+"CUDA enabled docker container"
+https://medium.com/google-cloud/containerized-jupyter-notebooks-on-gpu-on-google-cloud-8e86ef7f31e9
+
+video on setup
+https://www.youtube.com/watch?v=abEf3wQJBmE
+
+
+TRYING TO RUN THE thing
+cmake -DGPU_MODE=CPU_ONLY ..
+make -j 4
+./examples/tutorial_wrapper/6_user_asynchronous_output.bin --logging_level 0 --image_dir /host/test_images/my

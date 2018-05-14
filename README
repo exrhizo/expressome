@@ -25,6 +25,10 @@ need to instrumentalize tf-pose somehow
 
 
 
+Ok, what is the first thing to do?
+look at the channels for the two deals
+
+
 
 
 
@@ -54,3 +58,6 @@ Finally::: https://stackoverflow.com/a/13470067/3304125
 
 How I am to work with my codes
 it seems that either I go all the way and make it a package, or I just let it live on as scripts
+HOW TO STRUCTURE PROJECT
+https://news.ycombinator.com/item?id=9896369
+
