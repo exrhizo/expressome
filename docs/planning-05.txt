@@ -1,4 +1,31 @@
+PLAN  PLAN
+PLAN  PLAN
+PLAN  PLAN
 
+
+DOCKERFILE (start with CPU version)
+
+CPU vs NVIDIA versions
+
+install all the prereqs
+actually install openpose into PATH
+then get the python versions running
+write a wrapper that can output the data as a numpy blob
+
+Also set up the repository so that the python dispatcher can run
+Have that working to be able to save into a path
+
+Then setup to run on google cloud
+figure out how to write to the buckets
+
+Run everything for all my vids
+
+
+
+
+RESOURCES    RESOURCES    RESOURCES
+RESOURCES    RESOURCES    RESOURCES
+RESOURCES    RESOURCES    RESOURCES
 
 GPU on google cloud with normal ubuntu
 https://hackernoon.com/launch-a-gpu-backed-google-compute-engine-instance-and-setup-tensorflow-keras-and-jupyter-902369ed5272
@@ -6,6 +33,10 @@ https://hackernoon.com/launch-a-gpu-backed-google-compute-engine-instance-and-se
 
 troubleshooting my docker on gcloud
 
+
+
+DOCKER with the x11 gui
+https://forums.docker.com/t/how-to-run-gui-apps-in-containiers-in-osx-docker-for-mac/17797/7
 
 
 
@@ -18,7 +49,30 @@ video on setup
 https://www.youtube.com/watch?v=abEf3wQJBmE
 
 
-TRYING TO RUN THE thing
+
+
+RUN       RUN       RUN
+RUN       RUN       RUN
+RUN       RUN       RUN
+
+./ubuntu/install_cmake.sh
+mkdir build && cd build
 cmake -DGPU_MODE=CPU_ONLY ..
-make -j 4
-./examples/tutorial_wrapper/6_user_asynchronous_output.bin --logging_level 0 --image_dir /host/test_images/my
+make -j `nproc`
+
+./build/examples/tutorial_wrapper/6_user_asynchronous_output.bin --logging_level 0 --image_dir /host/test_images/my --write_images /host/test_images/out_openpose/img --write_keypoint_json /host/test_images/out_openpose/json --net_resolution 656x368
+
+./build/examples/tutorial_wrapper/1_user_synchronous_postprocessing.bin --display 0 --net_resolution 656x368 --image_dir /host/test_images/my --write_images /host/test_images/out_openpose/img --write_json /host/test_images/out_openpose/json --logging_level 1 
+
+./build/examples/tutorial_wrapper/1_user_synchronous_postprocessing.bin --display 0 --net_resolution 656x368 --image_dir /host/test_images/my --write_images /host/test_images/out_openpose/img --write_json /host/test_images/out_openpose/json --logging_level 0
+
+WORKS!
+
+./build/examples/openpose/openpose.bin --display 0 --net_resolution 656x368 --image_dir /host/test_images/my --write_images /host/test_images/out_openpose/img --write_json /host/test_images/out_openpose/json --logging_level 0
+
+WORKS with the openpose.bin using the same args!
+
+
+
+
+
