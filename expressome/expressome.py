@@ -42,6 +42,10 @@ class Video:
 		self.end = end
 		self.boundaries = boundaries
 
+	def path(self):
+		# todo make this work with buckets and use path.join
+		return self.root + '/' + self.name
+
 	def load(self):
 		pass
 

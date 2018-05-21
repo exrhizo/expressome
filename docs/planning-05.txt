@@ -30,6 +30,9 @@ TODO
  - Get express to work with the openpose
  - create test video
 
+ - Put on path
+   - ln -sf $(pwd)/build/examples/openpose/openpose.bin /usr/bin/openpose
+
  - ingest videos
    - describe them
    - upload them into buckets
